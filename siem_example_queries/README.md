@@ -1,22 +1,15 @@
-# Microsoft Azure Sentinel
-The files contained in this repository provides example workbooks and queries for Microsoft Azure Sentinel with having Jamf Protect as data source.
+# SIEM Example Queries and Workbooks
+The SIEM Example Queries and Workbooks contained within this repository are examples of queries or workbooks that can be used in a SIEM helping displaying data transmitted by Jamf Protect, the examples are helping you getting started with mapping data points from Jamf Protect in your SIEM.
 
-In order to provide Sentinel with data points from Jamf Protect please first enable 3rd Party Data forwarding in [Jamf Protect with Azure Sentinel](https://docs.jamf.com/jamf-protect/documentation/Data_Forwarding_to_a_Third_Party_Storage_Solution.html?hl=sentinel#task-4227).
+**Getting data streamed in to the SIEM requires setting it up in the Jamf Protect console**
 
-**Steps to use example workbooks contained within this repository:**
+The general flow of the operations that occur through this operation is as follows:
+1. A Alert, Unified Log or Telemetry stream is triggered by Jamf Protect
+2. This data is either being forwarded from Protect Cloud to the SIEM or from the endpoint to the SIEM.
 
-1. Navigate to _https://portal.azure.com_
-2. Navigate to Azure Sentinel
-3. Navigate to the Sentinel Workspace that is being used for Jamf Protect
-4. Navigate to Workbooks and continuing in My Workbooks
-5. Click on + Add Workbook
-6. Click Edit and in the button bar on the top navigate to the advanced editor `</>`
-7. Copy and Paste all data below the # JSON Representation here
-8. Once copied into Advanced Editor, hit CMD+F or CNTR+F and replace YOUR_PROTECT_SENTINEL_DATASOURCE with your Sentinel Data Source name
-9. Hit Apply and Done Editing
-10. You can now view or link to this dashboard by clicking View My Dashboard
-
-![](.Microsoft_Azure_Sentinel_Workbook.png)
-
+In this repository you will find examples for:
+- [ ] Splunk Enterprise
+- [ ] Microsoft Azure Sentinel
+- [ ] SumoLogic
 
 ## Please note that all resources contained within this repository are provided as-is and are not officially supported by Jamf Support.
